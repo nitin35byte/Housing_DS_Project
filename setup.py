@@ -28,7 +28,7 @@ name=PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
 description=DESCRIPTION,
-packages=find_packages(),
+packages=find_packages(),#find_packages-is return  all the packages (packags is init file under folders(folder= Module))
 install_requires=get_requirements_list()
 )
 
