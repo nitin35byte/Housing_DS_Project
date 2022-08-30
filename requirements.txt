@@ -3,4 +3,4 @@ gunicorn
 sklearn
 pandas
 numpy
--e . #for intalling external folders
+ #for intalling external folders
