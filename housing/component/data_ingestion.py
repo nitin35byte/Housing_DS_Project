@@ -27,11 +27,12 @@ class DataIngestion:
     def download_housing_data(self,):
         try:
             #Extracting remove url to download dataset
-            download_url= self.data_ingestion_config.dataset_download__url
+           download_url= self.data_ingestion_config.dataset_download__url
 
             #folder location to download file
-            gz_download_dir = self.data_ingestion_config.tgz_download_dir
-
+           gz_download_dir = self.data_ingestion_config.tgz_download_dir
+        except Exception as e:
+            raise HousingException (e,sys) from e 
 
     def extract_tgz_file(self):
         pass
@@ -45,7 +46,8 @@ class DataIngestion:
         except Exception as e:
             raise HousingException (e,sys) from e 
             
-            
+
+    
 
 
 
